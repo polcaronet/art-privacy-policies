@@ -186,7 +186,7 @@
       <li><strong>CPF:</strong> Obrigatório para transações financeiras (BACEN)</li>
       <li><strong>Telefone:</strong> Para contato sobre pedidos e segurança</li>
       <li><strong>Endereço completo:</strong> Para entrega e validação antifraude</li>
-      <li><strong>Dados do cartão:</strong> Processados de forma segura pelo Stripe (certificação PCI-DSS Level 1)</li>
+      <li><strong>Dados do cartão:</strong> Processados de forma segura pelo MercadoPago (certificação PCI-DSS)</li>
     </ul>
 
     <h3>2.3 Dados de Uso</h3>
@@ -209,7 +209,7 @@
     <h3>3.1 Finalidades do Tratamento</h3>
     <ul>
       <li><strong>Prestação do serviço:</strong> Funcionamento do app e suas funcionalidades</li>
-      <li><strong>Processamento de pagamentos:</strong> Transações seguras via Stripe</li>
+      <li><strong>Processamento de pagamentos:</strong> Transações seguras via MercadoPago</li>
       <li><strong>Armazenamento de dados:</strong> Informações armazenadas no Firebase (Google) e MongoDB</li>
       <li><strong>Comunicação:</strong> Notificações sobre pedidos e atualizações</li>
       <li><strong>Segurança:</strong> Prevenção de fraudes e proteção da conta</li>
@@ -231,8 +231,8 @@
     <ul>
       <li><strong>Firebase (Google):</strong> Autenticação, armazenamento de imagens e dados em tempo real</li>
       <li><strong>MongoDB Atlas:</strong> Armazenamento seguro de dados de pedidos e transações</li>
-      <li><strong>Stripe:</strong> Processamento de pagamentos com certificação PCI-DSS Level 1</li>
-      <li><strong>Render.com:</strong> Hospedagem segura do backend</li>
+      <li><strong>MercadoPago:</strong> Processamento de pagamentos via PIX e cartão de crédito</li>
+      <li><strong>Fly.io:</strong> Hospedagem segura do backend</li>
     </ul>
 
     <h3>4.2 Detalhamento dos Serviços</h3>
@@ -252,12 +252,12 @@
       <li>Localização: Servidores com conformidade SOC 2 Type II</li>
     </ul>
 
-    <p><strong>Stripe</strong></p>
+    <p><strong>MercadoPago</strong></p>
     <ul>
-      <li>Processamento seguro de pagamentos com cartão de crédito</li>
+      <li>Processamento seguro de pagamentos via PIX e cartão de crédito</li>
       <li>Tokenização de dados de cartão (nunca armazenamos dados completos)</li>
-      <li>Certificação PCI-DSS Level 1 (mais alto nível de segurança)</li>
-      <li>Conformidade com LGPD e regulamentações internacionais</li>
+      <li>Certificação PCI-DSS (alto nível de segurança)</li>
+      <li>Conformidade com LGPD e regulamentações brasileiras</li>
     </ul>
 
     <div class="highlight">
@@ -328,7 +328,7 @@
     <ul>
       <li><strong>Firebase (Google):</strong> Servidores nos EUA com conformidade GDPR/LGPD</li>
       <li><strong>MongoDB Atlas:</strong> Servidores com conformidade SOC 2 Type II</li>
-      <li><strong>Stripe:</strong> Processamento global com conformidade PCI-DSS e LGPD</li>
+      <li><strong>MercadoPago:</strong> Processamento no Brasil com conformidade PCI-DSS e LGPD</li>
     </ul>
     <p>Todos os provedores seguem padrões internacionais de proteção de dados equivalentes ou superiores à LGPD,
       incluindo cláusulas contratuais padrão aprovadas e certificações de segurança reconhecidas internacionalmente.</p>
@@ -358,7 +358,8 @@
       <p style="margin-top: 15px; font-size: 0.9em;"><strong>Principais alterações nesta versão:</strong></p>
       <ul style="text-align: left; display: inline-block; font-size: 0.9em;">
         <li>Atualização do nome do aplicativo de "Damião Arte" para "Art Plastic"</li>
-        <li>Revisão geral e atualização da política para a versão 3.0</li>
+        <li>Atualização dos serviços terceiros: Firebase, MongoDB Atlas, MercadoPago e Fly.io</li>
+        <li>Remoção de referências a Stripe e Render.com</li>
       </ul>
     </footer>
   </div>
